@@ -3,7 +3,8 @@ import requests
 
 import re
 
-url = "https://snsce.ac.in"
+input="Enter a Url"
+url = input
 req=requests.get(url)
 print(req)
 soup=BeautifulSoup(req.text,"html.parser")
